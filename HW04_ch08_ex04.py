@@ -14,7 +14,9 @@
 
 
 def any_lowercase1(s):
-    """Explain what is wrong, if anything, here.
+    """
+    This returns False when the first character of the string is an uppercase,
+    and does not continue to search further.
     """
     for c in s:
         if c.islower():
@@ -24,7 +26,8 @@ def any_lowercase1(s):
 
 
 def any_lowercase2(s):
-    """Explain what is wrong, if anything, here.
+    """This script checks if the literal 'c' is lowercase, and completely fails
+    to check the string.
     """
     for c in s:
         if 'c'.islower():
@@ -34,7 +37,7 @@ def any_lowercase2(s):
 
 
 def any_lowercase3(s):
-    """Explain what is wrong, if anything, here.
+    """Flag returns False for test string "SupporT". Script does not work.
     """
     for c in s:
         flag = c.islower()
@@ -42,7 +45,7 @@ def any_lowercase3(s):
 
 
 def any_lowercase4(s):
-    """Explain what is wrong, if anything, here.
+    """ Flag returns True for test string "SupporT". Script works.
     """
     flag = False
     for c in s:
@@ -51,7 +54,7 @@ def any_lowercase4(s):
 
 
 def any_lowercase5(s):
-    """Explain what is wrong, if anything, here.
+    """This function actually checks if c is uppercase, instead of lowercase
     """
     for c in s:
         if not c.islower():
